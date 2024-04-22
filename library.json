@@ -1,0 +1,20 @@
+{
+  "name": "MQTT-C",
+  "version": "main",
+  "description": "portable, embedded friendly MQTT client library",
+  "homepage": "https://liambindle.ca/MQTT-C/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liambindle.ca/MQTT-C.git"
+  },
+  "license": "MIT",
+  "headers": [
+    "mqtt.h",
+    "mqtt_pal.h"
+  ],
+  "build": {
+    "flags": ["-DMQTT_USE_CUSTOM_SOCKET_HANDLE"],
+    "includeDir": "include",
+    "srcDir": "src"
+  }
+}
